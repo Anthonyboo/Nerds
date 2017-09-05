@@ -1,0 +1,76 @@
+@font-face {
+  font-family: roboto;
+  src: url(fonts/roboto-medium.ttf);
+}
+figure {
+  vertical-align:left;
+}
+body {
+  width: 1440px;
+  height: 2476px;
+  border: solid 1px black;
+}
+header {
+  padding-top: 49px;
+  padding-left: 140px;
+  width: 1440px;
+  height: 544px;
+  background-color: #eeeeee;
+  /* Настроить по ширине width */
+  box-sizing: border-box; 
+}
+h1 {
+  font: 55px roboto;
+  font-style: bolder;
+}
+p {
+  font: 16px roboto;
+}
+a {
+  font: 16px roboto;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav img{
+  /* фиксированный размер изображения */
+  display: block;
+  width: 160px;
+  height: 65px;
+  background-image: url(111.png);
+  border: 1px solid black;
+}
+.main-navigation ul li{
+  display:inline-block;
+  margin-right: 50px;
+
+  font: 16px roboto;
+  font-style: bolder;
+  text-transform: uppercase;
+  font-style: bold;
+}
+.information a {
+  padding:15px 45px;
+  /* хотя должно быть 50px 140px */
+  border: 1px black;
+  background-color: #fb565a;
+  font: 16px roboto;
+  color: #FFFFFF;
+}
+.item {
+  margin-right: 50px;
+  width: 380px;
+  height: 350px;
+}
+.item {
+  display:inline-block;
+  margin-top: 0;
+  width: 300px;
+  height: 350px;
+}
+
+.item figure {
+  width: 300px;
+  height: 146px;
+  border: 1px black;
+}
