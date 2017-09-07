@@ -661,7 +661,13 @@ form {
 .slider .information a {
   background-color: #fb565a;
   border-radius: 2px;
-  padding: 20px 60px; /* Поля */
+  display: block;
+  text-align:center;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 200px;
+  height: 50px;
+  /* padding: 20px 60px;  */
   position: relative;
   top: 40px;
 }
