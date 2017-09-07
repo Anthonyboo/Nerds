@@ -52,46 +52,58 @@ button.active {
 /* ЗАГОЛОВКИ И ТЕКСТ */
 
 h1 {
-  font: 55px RobotoMedium;
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-size: 55px;
+  font-weight: 500;
+  line-height: calc(60/55);
 }
 
 h2{
-  font: 36px RobotoMedium;
-}
-
-.form-group h2 {
-  
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: calc(60/36);
 }
 
 h3 {
-  font: 18px RobotoMedium;
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: calc(60/18);
   text-transform: uppercase;
 }
 
 h4 {
-  font: 16px RobotoMedium;
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(60/16);
   text-transform: uppercase;
 }
 
 /* ССЫЛКИ И ЛЕЙБЛЫ */
 
 p,
-label {
-  font: 16px RobotoRegular;
+label,
+.warp label,
+.warp input {
+  font-family: "RobotoRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: calc(60/16);
   color: black;
 }
 
-.warp label {
-  font: 16px RobotoRegular;
+.warp label,
+.warp input {
   text-transform: uppercase;
 }
 
 .warp input {
-  font: 16px RobotoRegular;
-  text-transform: uppercase;
   background-color: #eeeeee;
   border: 0px;
-  width: 60px;
+  height: 20px;
+  width: 70px;
   display:inline-block;
 }
 
@@ -101,7 +113,10 @@ label {
 }
 
 a {
-  font: 16px RobotoMedium;
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(60/16);
   text-decoration: none;
   text-transform: uppercase;
   color: black;
@@ -109,13 +124,15 @@ a {
 
 a p,
 .description p {
-  font: 16px RobotoRegular;
+  font-family: "RobotoRegular", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: calc(60/16);
   text-transform: none;
   color: #d6d6d6;
 }
 
 .catalog-item p {
-  font: 16px RobotoRegular;
   color: #666666;
 }
 
