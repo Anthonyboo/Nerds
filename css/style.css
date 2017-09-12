@@ -512,6 +512,7 @@ h2{
   line-height: calc(60px/36px);
 }
 
+
 h3 {
   font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -537,7 +538,7 @@ label,
   font-family: "RobotoRegular", Arial, Helvetica, sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: calc(60px/16px);
+  line-height: 25px;
   color: black;
 }
 
@@ -622,8 +623,6 @@ main {
 .future{
   background-color: white;
   box-sizing: border-box;
-  padding-top: 80px;
-  padding-left: 140px;
 }
 
 form {
@@ -661,13 +660,11 @@ form {
 .slider .information a {
   background-color: #fb565a;
   border-radius: 2px;
-  display: block;
+  display: inline-block;
   text-align:center;
-  /* margin-left: auto;
-  margin-right: auto; */
+  vertical-align:middle;
   width: 200px;
   height: 50px;
-  /* padding: 20px 60px;  */
   position: relative;
   top: 40px;
 }
@@ -681,7 +678,11 @@ form {
   width: 300px;
   height: 350px;
   display:inline-block;
-  padding: 50px; /*так-то 100*/
+  padding-right: 100px;
+}
+
+.product{
+  margin-bottom: 120px;
 }
 
 .map .description {
@@ -708,6 +709,10 @@ form {
   background-color: #fb565a ;
 }
 
+.product .item:nth-child(3) {
+  padding-left: 0px;
+}
+
 .yellow a {
   background-color: #efc849;
 }
@@ -723,3 +728,119 @@ form {
   top:346px;
   right:0;
  } 
+
+ /* РАЗМТКА FLOAT */
+
+ .main-navigation figure{
+  float: left;
+ }
+
+ .main-navigation ul{
+   float: left;
+   margin-top: 34px;
+   margin-left: 200px;
+ }
+
+ .main-navigation li:last-child {
+   margin-left: 195px;
+ }
+
+ .main-navigation li:last-child a {
+  margin-left: 26px;
+}
+
+.slider {
+  margin-top: 63px;
+  background-image: url(../images/slide1.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 431px;
+  width: 1160px;
+  /* border: 1px solid black; */
+}
+
+.item .information {
+  /* margin-bottom: 300px; */
+  border: 1px solid rgba(159, 9, 9, 0.00);;
+  width: 560px;
+}
+
+.control {
+  width: 122px;
+  height: 54px;
+  position: absolute;
+  text-align: center;
+  display: inline-block;
+  left: 675px;
+  top: 431px;
+
+}
+.control div{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 9px;
+}
+
+.main-navigation .item {
+  margin-top: 100px;
+  border: 1px solid rgba(159, 9, 9, 0);
+}
+
+.information h1{
+  margin-top: 50px;
+}
+
+.future .informations {
+  float: left;
+  width: 660px;
+  height: 526px;
+}
+
+.future .statistic{
+  float: right;
+  width: 500px;
+  height: 526px;
+  text-align: right;
+}
+
+.future .description ul {
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  text-align: right;
+}
+
+.statistic li {
+  list-style-type: none;
+  width: 120px;
+  height: 100px;
+  display: inline-block;
+  text-align: left;
+}
+
+.statistic p {
+  color: black;
+  margin: 0px;
+}
+
+.statistic h2 {
+  margin-bottom: 25px;
+}
+
+.partners {
+  width: 1160px;
+  height: 800px;
+}
+
+.partners div {
+  display: inline-block;
+  margin-left: 102px;
+}
+
+.partners div:nth-child(1) {
+  margin-left: 0px;
+
+}
