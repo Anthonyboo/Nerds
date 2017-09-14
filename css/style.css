@@ -512,6 +512,15 @@ h2{
   line-height: calc(60px/36px);
 }
 
+.item h2{
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.item p{
+  margin-bottom: 40px;
+}
+
 
 h3 {
   font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
@@ -599,12 +608,44 @@ figure {
 }
 
 header {
-  /* width: 1440px; - нужно ли это указывать? */
+  width: 1440px;
   height: 545px;
   background-color: #eeeeee;
   box-sizing: border-box;
   padding-top: 50px;
-  padding-left: 140px;
+  padding-left: 120px;
+}
+
+.future, .partners {
+  width: 1160px;
+}
+
+.map {
+  position:relative;
+  width: 1440px;
+  width: 420px;
+  margin-left: -120px;
+  margin-bottom: 80px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.map .description {
+  position: absolute;
+  width: 319px;
+  height: 308px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  bottom: 60px;
+  left: 140px;
+}
+
+.map .description:nth-child(3) {
+    background-color: white ;
 }
 
 .main-navigation ul li{
@@ -617,7 +658,7 @@ main {
   background-color: white;
   box-sizing: border-box;
   padding-top: 80px;
-  padding-left: 140px;
+  padding-left: 120px;
 }
 
 .future{
@@ -660,7 +701,7 @@ form {
 .slider .information a {
   background-color: #fb565a;
   border-radius: 2px;
-  display: inline-block;
+  display: block;
   text-align:center;
   vertical-align:middle;
   width: 200px;
@@ -677,28 +718,27 @@ form {
 .product .item {
   width: 300px;
   height: 350px;
-  display:inline-block;
-  padding-right: 100px;
+  float: left;
+  margin-right: 100px;
+  /* padding-right: 100px; */
+}
+
+.product .item:last-child {
+  margin-right: 0px;
 }
 
 .product{
-  margin-bottom: 120px;
+  margin-bottom: 80px;
+  width: 1160px;
+  height: 390px;
 }
 
-.map .description {
-  width: 319px;
-  height: 308px;
-  background-color: #ffffff;
-}
-
-.map .description:nth-child(3) {
-    background-color: white ;
-}
 .product a {
+  display: block;
   border-radius: 2px;
-  padding: 20px 40px;
-  position: relative;
-  top: 40px;
+  width: 160px;
+  height: 50px;
+  text-align: center;
 }
 
 .green a {
@@ -708,6 +748,7 @@ form {
 .red a {
   background-color: #fb565a ;
 }
+
 
 .product .item:nth-child(3) {
   padding-left: 0px;
@@ -742,7 +783,7 @@ form {
  }
 
  .main-navigation li:last-child {
-   margin-left: 195px;
+   float: right;
  }
 
  .main-navigation li:last-child a {
@@ -784,6 +825,12 @@ form {
   margin: 9px;
 }
 
+/* .control .active{
+  border: 3px solid #494848;
+  width: 12px;
+  height: 12px;
+} */
+
 .main-navigation .item {
   margin-top: 100px;
   border: 1px solid rgba(159, 9, 9, 0);
@@ -793,32 +840,50 @@ form {
   margin-top: 50px;
 }
 
+.future {
+  border-bottom: 2px solid #eeeeee;
+  border-top: 2px solid #eeeeee;
+  padding-top: 40px;
+  height: 530px;
+}
+
 .future .informations {
   float: left;
   width: 660px;
-  height: 526px;
+  height: 530px;
 }
 
 .future .statistic{
   float: right;
-  width: 500px;
-  height: 526px;
+  width: 360px;
+  height: 530px;
   text-align: right;
 }
 
 .future .description ul {
-  display: inline-block;
-  width: 400px;
+  float: left;
+  width: 360px;
   height: 100px;
-  text-align: right;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
 }
 
 .statistic li {
   list-style-type: none;
-  width: 120px;
-  height: 100px;
+  width: 100px;
+  height: 150px;
   display: inline-block;
   text-align: left;
+  margin-right: 20px;
+}
+
+.statistic li:last-child {
+  margin-right: 0px;
+}
+
+.statistic li h2 {
+  margin-top: 0px;
 }
 
 .statistic p {
@@ -831,17 +896,48 @@ form {
 }
 
 .partners {
+  box-sizing: border-box;
+  padding-left: 80px;
   width: 1160px;
-  height: 800px;
+  height: 180px;
+  margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .partners div {
   display: inline-block;
-  margin-left: 102px;
+  width: 24%;
+  vertical-align: middle;
 }
 
 .partners div:nth-child(1) {
   margin-left: 0px;
 
 }
-/* 1 */
+
+.main-navigation ul{
+  width: 800px;
+}
+
+footer .social {
+  float: left;
+  margin-right: 140px;
+}
+
+footer{
+  height: 80px;
+  width: 1160px;
+  padding-left: 120px;
+  margin-bottom: 70px;
+}
+footer .social,
+footer .text {
+  float: left;
+}
+
+.text h2 {
+  margin: 0px;
+}
+.social div {
+  display: inline-block;
+}
