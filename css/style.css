@@ -474,8 +474,6 @@ background: no-repeat;
   border: 0px solid #eee;
   height: 28px;
   width: 115px;
-  margin: 50px 0 0 50px;
-  padding: 0 0 0 7px;
   overflow: hidden;
   display: block;
 }
@@ -609,7 +607,6 @@ figure {
 
 header {
   width: 1440px;
-  height: 545px;
   background-color: #eeeeee;
   box-sizing: border-box;
   padding-top: 50px;
@@ -676,7 +673,7 @@ form {
   .catalog-items {
   position:relative;
   width: 820px;
-  height: 1920px;
+  /* height: 1920px; */
  }
 
  /* ТОВАР-СКРЫТЫЙ КОНТЕНТ */
@@ -940,4 +937,86 @@ footer .text {
 }
 .social div {
   display: inline-block;
+}
+
+.main-header .title {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  margin: 55px 0px 115px 220px;
+}
+
+.title h1 {
+  margin:0px;
+}
+
+.container form {
+float: left;
+width: 260px;
+height: 775px;
+border: 1px solid black;
+margin-right: 140px;
+}
+
+.form-group {
+  display: block;
+}
+
+.catalog {
+  float: left;
+  width: 760px;
+}
+
+.catalog button {
+  height: auto;
+  width: auto;
+  padding: 0px;
+  float: right;
+  margin-right: 25px;
+}
+
+.up-down {
+  margin-right: 18px;
+}
+
+.up-down:last-child {
+  margin-right: 0px;
+}
+
+.catalog h3:first-child{
+  margin: 0px;
+  display: inline;
+  margin
+}
+
+.catalog-items {
+  margin-top: 60px;
+}
+
+.catalog-item:last-child,
+.catalog-item:nth-child(5){
+  margin-bottom: 0px;
+}
+
+.pagination {
+  margin: 35px 0px 35px 0px;
+}
+
+.pagination a{
+  display: inline-block;
+  height: 47px;
+  width: 47px;
+  background-color: #eeeeee;
+  border: 3px solid #eeeeee;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.pagination a:last-child{
+  width: 260px;
+  margin-right: 0px;
+}
+
+.pagination .active{
+  background-color: white;
 }
