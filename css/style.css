@@ -1020,3 +1020,7 @@ margin-right: 140px;
 .pagination .active{
   background-color: white;
 }
+
+.control div div{
+  display: none;
+}
