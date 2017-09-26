@@ -519,7 +519,6 @@ h2{
   margin-bottom: 40px;
 }
 
-
 h3 {
   font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -596,6 +595,7 @@ a p,
 .description a {
   color: white;
   text-transform: uppercase;
+  line-height:3;
 }
 
 /* ОСНОВНЫЕ ЭЛЕМЕНТЫ */
@@ -694,7 +694,7 @@ form {
 
 /* ПРОДУКТЫ */
 
-.description a,
+
 .slider .information a {
   background-color: #fb565a;
   border-radius: 2px;
@@ -788,7 +788,7 @@ form {
 }
 
 .slider {
-  margin-top: 63px;
+  /* margin-top: 63px; */
   background-image: url(../images/slide1.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -1023,4 +1023,39 @@ margin-right: 140px;
 
 .control div div{
   display: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container .description {
+  box-sizing: border-box;
+  padding-top: 30px;
+  text-align: center;
+  vertical-align: middle;
+  border: 0px;
+}
+
+.map a:last-child {
+  margin-left: 50px;
+  background-color: #fb565a;
+  border-radius: 2px;
+  display: block;
+  text-align:center;
+  vertical-align:middle;
+  width: 218px;
+  height: 50px;
+  position: relative;
+  top: 40px;
+}
+
+.map a:nth-child(4) {
+  margin-bottom: 0px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid red;
 }
