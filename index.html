@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container"></div>
+    <div class="container clearfix">
         <header class="main-header">
             <nav class="main-navigation clearfix">
                 <figure>
@@ -24,36 +24,43 @@
                 </ul>
             </nav>
             <div class="slider clearfix">
-                <div class="control">
-                    <form>
-                        <input type="radio" name="slide" id="r1"></intut>
-                        <input type="radio" name="slide" id="r2"></intut>
-                        <input type="radio" name="slide" id="r3"></intut>
-                    </form>
+                <input type="radio" name="slide" id="r1" checked></intut>
+                <input type="radio" name="slide" id="r2"></intut>
+                <input type="radio" name="slide" id="r3"></intut>
+                <div class="slider-control">
+                    <label for="r1"></label>
+                    <label for="r2"></label>
+                    <label for="r3"></label>
                 </div>
-                <div class="slide">
-                    <div class="information">
-                        <h1>Долго, дорого, скурпулезно</h1>
-                        <p> Математически выверенный дизайн<br> для 
-                            вашего сайта или бобильного приложения.</p>
-                        <a href="">Узнать больше</a>
+                <div class="slides">
+                    <div class="slide slide1">
+                        <div class="information">
+                            <h2>1</h2>
+                            <h1>Долго, дорого, скурпулезно</h1>
+                            <p> Математически выверенный дизайн<br> для 
+                                вашего сайта или бобильного приложения.</p>
+                            <a href="">Узнать больше</a>
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="information">
-                        <h1>Любим математику<br> как никто другой</h1>
-                        <p> Никакого креатива, только математические формулы<br>
-                            для расчета идеальных пропорций.</p>
-                        <a href="">Узнать больше</a>
+                    <div class="slide slide2">
+                        <div class="information">
+                                <h2>1</h2>
+                            <h1>Любим математику<br> как никто другой</h1>
+                            <p> Никакого креатива, только математические формулы<br>
+                                для расчета идеальных пропорций.</p>
+                            <a href="">Узнать больше</a>
+                        </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="information">
-                        <h1>Только ночь,<br> только хардкор</h1>
-                        <p> Работать днем, как все? Мы против этого.<br>
-                            Ближе к полуночи работа только начинается.
-                        </p>
-                        <a href="">Узнать больше</a>
+                    <div class="slide slide3">
+                        <div class="information">
+                                <h2>1</h2>
+                            <h1>Только ночь,<br> только хардкор</h1>
+                            <p> Работать днем, как все? Мы против этого.<br>
+                                Ближе к полуночи работа только начинается.
+                            </p>
+                            <a href="">Узнать больше</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,10 +128,10 @@
                 </div>
             </div>
             <div class="partners">
-                <div class="htmlacademy"><a href=""><img src="images/logo-1.png" alt="Презентации" width="" height=""></a></div>
-                <div class="Borodinski"><a href=""><img src="images/logo-2.png" alt="Презентации" width="" height=""></a></div>
-                <div class="Pink"><a href=""><img src="images/logo-3.png" alt="Презентации" width="" height=""></a></div>
-                <div class="Mishka"><a href=""><img src="images/logo-4.png" alt="Презентации" width="" height=""></a></div>
+                <div class="htmlacademy"><a href=""><img src="images/logo-1.png" alt="Презентации" width="" height="" class="partners_logo"></a></div>
+                <div class="Borodinski"><a href=""><img src="images/logo-2.png" alt="Презентации" width="" height="" class="partners_logo"></a></div>
+                <div class="Pink"><a href=""><img src="images/logo-3.png" alt="Презентации" width="" height="" class="partners_logo"></a></div>
+                <div class="Mishka"><a href=""><img src="images/logo-4.png" alt="Презентации" width="" height="" class="partners_logo"></a></div>
             </div>
             <div class="map">
                 <img src="images/map_&_marker.jpg"></img>
@@ -138,17 +145,18 @@
                 </div>
             </div>
         </main>
+        
+        </body>
+        <footer class="clearfix">
+            <div class="social">
+                <div class="vk"><a href=""><img src="images/vk-icon.png" alt="Презентации" width="" height=""></a></div>
+                <div class="fb"><a href=""><img src="images/fb-icon.png" alt="Презентации" width="" height=""></a></div>
+                <div class="inst"><a href=""><img src="images/insta-icon.png" alt="Презентации" width="" height=""></a></div>
+            </div>
+            <div class="text">
+                <h2>Давайте дружить, это выгодно!</h2>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+        </footer>
     </div>
-</body>
-<footer class="clearfix">
-    <div class="social">
-        <div class="vk"><a href=""><img src="images/vk-icon.png" alt="Презентации" width="" height=""></a></div>
-        <div class="fb"><a href=""><img src="images/fb-icon.png" alt="Презентации" width="" height=""></a></div>
-        <div class="inst"><a href=""><img src="images/insta-icon.png" alt="Презентации" width="" height=""></a></div>
-    </div>
-    <div class="text">
-        <h2>Давайте дружить, это выгодно!</h2>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-</footer>
-</html>
+        </html>
