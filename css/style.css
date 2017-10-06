@@ -501,6 +501,7 @@ h1 {
   font-size: 55px;
   font-weight: 600;
   line-height: calc(60px/55px);
+  letter-spacing: 2px;
 }
 
 h2{
@@ -508,15 +509,18 @@ h2{
   font-size: 36px;
   font-weight: 600;
   line-height: calc(60px/36px);
+  letter-spacing: 2px;
 }
 
 .item h2{
   text-transform: uppercase;
   margin-top: 30px;
+  letter-spacing: 2px;
 }
 
 .product .item h2 {
   font-size: 24px;
+  letter-spacing: 2px;
 }
 
 .item p{
@@ -629,11 +633,11 @@ header {
   margin-bottom: 80px;
 }
 
-/* .clearfix::after {
+.clearfixx::after {
   content: "";
   display: table;
   clear: both;
-} */
+}
 
 .map .description {
   position: absolute;
@@ -1043,12 +1047,12 @@ margin-right: 140px;
 .control div div{
   display: none;
 }
-/* 
-.clearfix:after {
+
+.clearfixx:after {
   content: "";
   display: block;
   clear: both;
-} */
+}
 
 .container .description {
   box-sizing: border-box;
@@ -1373,4 +1377,92 @@ main .future {
 
 .partners_logo:hover {
   opacity: 1;
+}
+
+.map {
+  position: relativ;
+}
+.modal_window {
+  position: absolute;
+  height: 590px;
+  width: 960px;
+  background-color: white;
+  box-shadow: 0 5px 60px black;
+  padding: 85px 100px 85px 100px;
+  box-sizing: border-box;
+  bottom:0;
+  left:240px;
+  margin-bottom: -80px;
+}
+
+.close {
+  height: 21px;
+  width: 21px;
+  background-image: url(../images/close-cross.jpg);
+}
+
+.modal_window p{
+  font-family: "RobotoMedium", Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  margin: 0px;
+  line-height: 0px;
+}
+
+.modal_window input:nth-child(2) {
+  height: 50px;
+  width: 360px;
+}
+
+.modal_window input:nth-child(4) {
+margin-bottom: 50px;
+
+}
+.modal_window input {
+  height: 115px;
+  width: 760px;
+}
+.modal_window .input_name,
+.modal_window .input_email {
+  width: 360px;
+  /* height: 76px; */
+  display: inline-block;
+  float: right;
+}
+
+.modal_window form {
+  margin: 0;
+  width: 760px;
+}
+
+.modal_window h2 {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.input_name{
+  margin-left: 40px;
+}
+
+.input_email {
+  margin-bottom: 35px;
+}
+
+.modal_window .close {
+  position: absolute;
+  top:80px;
+  left: 850px;
+}
+
+.input_email {
+  margin-bottom: 40px;
+}
+
+.modal_window button {
+  background-color: #fb565a;
+  color: white;
+  width: 260px;
+}
+
+.modal_window input{
 }
