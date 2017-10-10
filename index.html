@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Главная страница</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="../js/script.js"></script>  
 </head>
 <body>
     <div class="container clearfix">
@@ -140,10 +141,10 @@
                         <h4>NЁRDS DESIGN STUDIO</h4>
                         <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
                         <a href="tel:78122757575"><p>тел. +7-(812)275-75-75</p></a>
-                        <a class="btn" href="mailto:nerds@gmail.com">Напишите нам</a>
+                        <a class="open">Напишите нам</a>
                     </div>
                 </div>
-                <div class="modal_window clearfixx">
+                <div class="modal_window clearfixx hidden">
                     <h2>Напишите нам</h2>
                     <div class="close"></div>
                     <form>
@@ -160,6 +161,19 @@
                         <button type="submit">Отправить</button>
                     </form>
                 </div>
+                <script>
+                    var modal = document.querySelector('.modal_window');
+                    var close = document.querySelector(".close");
+                    var open = document.querySelector('.open');
+
+                    open.addEventListener("click", function(){
+                        modal.classList.remove('hidden');
+                    });
+
+                    close.addEventListener("click", function(){
+                    modal.classList.add('hidden');
+                    });
+                </script>
             </div>
         </main>
         

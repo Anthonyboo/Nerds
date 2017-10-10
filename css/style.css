@@ -1302,7 +1302,8 @@ slider input[type=radio] {
 }
 
 body .container {
-  width: 1440px;
+  /* width: 1440px; */
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1465,4 +1466,8 @@ margin-bottom: 50px;
 }
 
 .modal_window input{
+}
+
+.hidden {
+  display: none;
 }
